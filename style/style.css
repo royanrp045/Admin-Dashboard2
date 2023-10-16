@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: transparent;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 35rem;
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+main {
+  height: 50rem;
+  padding: 30px;
+  margin-left: 30px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.content .card {
+  width: 70%;
+  display: flex;
+  padding: 50px 30px 50px 30px;
+  margin-left: -20px;
+  margin-top: -15px;
+  border-radius: 20px;
+  background-color: rgb(26, 26, 26);
+}
+
+.content .card .image {
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/1.jpeg);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.content .card .image:hover {
+  width: 310px;
+  height: 310px;
+  transition: all 0.3s ease;
+}
+
+.content .card .image2 {
+  width: 300px;
+  height: 300px;
+  margin-left: 5rem;
+  background-image: url(../img/2.jpeg);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.content .card .image2:hover {
+  width: 310px;
+  height: 310px;
+  transition: all 0.3s ease;
+}
+
+.content .card .image3 {
+  width: 300px;
+  height: 300px;
+  margin-left: 5rem;
+  background-image: url(../img/3.jpeg);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.content .card .image3:hover {
+  width: 310px;
+  height: 310px;
+  transition: all 0.3s ease;
+}
+
+.content .penjelasan {
+  width: 70%;
+  background-color: rgb(26, 26, 26);
+  padding: 50px 30px 50px 30px;
+  margin-left: -20px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: -25px;
+}
+
+aside {
+  flex: 3;
+}
+
+.profile {
+  width: 23%;
+  height: 700px;
+  border-radius: 20px;
+  margin-left: 75%;
+  margin-top: -57%;
+  background-color: rgb(26, 26, 26);
+}
+
+.profile h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.profile .foto img{
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  margin-left: 90px;
+  border-radius: 20px;
+}
+
+h3 {
+  margin-left: 110px;
+}
+
+table {
+  text-align: center;
+  margin-left: 70px;
+}
+
+footer {
+  margin-top: 180px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+
+  .profile {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
